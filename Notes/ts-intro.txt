@@ -1,0 +1,16 @@
+what is typescript?
+--> typescript is superscript of JS, it adds data types to js(static data typing)
+
+how to install ts?
+1. install node js , it also installs npm(node package manager --> used to install/uninstall/update packages)
+2. check the versions by going to cmd and typing " npm -v" and "node -v"
+3. type in cmd " npm install -g typescript" and also checks version by "tsc -v"
+
+tsc --init will create tsconfig file which sets rules while tsc converts ts file into js file
+
+ts will understand datatypes in two ways
+1. type inference: based on inital value, tsc will guess the data type
+2. type assertion: you will gives types by specifying them exclusively
+
+
+
