@@ -10,7 +10,7 @@ tsc --init will create tsconfig file which sets rules while tsc converts ts file
 
 ts will understand datatypes in two ways
 1. type inference: based on inital value, tsc will guess the data type
-2. type assertion: you will gives types by specifying them exclusively
+2. type annotation: you will gives types by specifying them exclusively
 
 
 
