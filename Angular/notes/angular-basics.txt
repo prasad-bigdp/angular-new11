@@ -1,0 +1,73 @@
+what is angular?
+ -- Angular is Javascript Framework and a developer platform to build SPA(single page Applications) or PWA(Progressive Web Applications) applications
+
+is Angular same as Angular JS?
+No, Angular built on the Angular Js with TypeScript, It follows similar architecure but more type safe and secured. also called as Angular + or Angular2
+
+what is the current version of Angular?
+we are in Angular 18 but in this course we discuss mostly 16,17. angualar 9 ,13,15 are most used in market.
+
+what is better react or angular or vue?
+react is just a library and easy to learn but difficult to manage since it need so many 3rd party libraries
+Angular follows an architecure and it gives control over your whole applications
+vue is powerful but complex compared to angular or react.
+
+How to install Angular?
+step 1: make sure you have node js or install it . "node -v"
+step 2: open cmd and type " npm install @angular/cli "
+step 3: check the version of angular by typing "ng --version"
+step 4: type " ng new app-name --standalone=false "
+select "css" +select no for server side rendering
+Scaffolding: angular uses command line interface for all the operations like creating a new app or creating a component etc.., This technique is called scaffolding 
+
+folder structure:
+when we installed / initiated application so many folders and files will be installed. let's explore all
+
+tsconfig.json --> used to create rules to tsc for whole project
+
+tsconfig-app.json: used to create rules to tsc for specific to application
+
+tsconfig.spec.json --> used for testing before tsc converts
+
+angular.json --> angular meta data / ruleset about the project
+
+package.json --> meta data( scripts, depedencies,name ) etc..,
+
+package-lock.json --> used for metadata of package.json in detail
+
+.gitignore -- list of files which git ignores when pushing to repository
+
+readme.md --> instructions for project
+
+node_modules : installed packages will be in node node_modules
+
+public: folder to keep all public resources
+
+src-- this is where our code saved
+
+every component( a logical division of UI to reuse) must have ts file(component file) and html file(template file)
+
+
+app.component.ts -- used for logic of component
+app.component.html -- used for html template
+app.component.css -- used for styling
+app.component.spec.ts -- used for testing
+
+All component will be inside app-module.ts
+
+module files bootstrap(converting static files to dynamic) the components
+
+To run application "ng serve or ng serve -o"
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -12,5 +12,12 @@ ts will understand datatypes in two ways
 1. type inference: based on inital value, tsc will guess the data type
 2. type annotation: you will gives types by specifying them exclusively
 
+number,string,boolean,undefined,null
+union(number|string|boolean)
+number[] , tuple, enum, any
+functions-- argument types, return type(void,never)
+type alias,interfaces
+classes,objects,constructor
+
 
 
