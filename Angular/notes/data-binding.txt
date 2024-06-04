@@ -1,0 +1,18 @@
+Data binding refers to communication between component and template files.
+
+data binding in angular can be one way or two way.
+it means we can send data from html to ts or ts to html or both at a time
+
+One-way data binding:
+  component(ts) to template(html):
+   i. string interpolation: you can get values from component to template as a string by embracing values in double braces
+   html
+   <p>{{data}}<p>
+   ts
+   data="something"
+   ii.Property Binding:
+   you can assign a value to any property of html element from ts
+   <button [disabled]="value">cvdb</button>
+   Template(html) to Component(ts):
+   iii. event binding
+   

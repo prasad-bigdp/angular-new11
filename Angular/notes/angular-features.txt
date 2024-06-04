@@ -1,0 +1,11 @@
+Angular Provides components which are part of modules
+
+component: a logical reusable division of User Interface
+
+all component which serves similar purpose will under a module
+
+component contains
+component.html --> template / view -- > UI
+component.ts --> component/model-controller -- logic
+component.css ---->styling
+component.spec.ts ----->testing

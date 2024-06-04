@@ -1,0 +1,51 @@
+Angular?
+
+Angular is a front-end FrameWork and a developer-platform developed by Google in 2012. Angular is built upon TS unlike it's previous version Angular Js which is based on JS. We also called this as Angular+/Angular2
+
+use: SPA(single page Application) and PWA(Progressive Web Apps)
+
+frameworks vs libraries:
+library is a predefined code for specific purpose, React is also a library for UI purpose
+
+but frameworks provide complete dveloper needs as a package
+
+Step 1: install npm and check the version by npm -v
+step 2: npm install -g @angular/cli and check the version by "ng v"
+
+scaffolding means a separate terminal commands generates a basic code.
+
+Would you like to share pseudonymous usage data about this project with the Angular Team
+at Google under Google's Privacy Policy at https://policies.google.com/privacy. For more
+details and how to change this setting, see https://angular.io/analytics. (y/N)
+
+Y
+
+In terminal, select command prompt, 
+for new Application : ng new app-name --standalone=false
+select CSS and no
+
+for running the application : ng serve  or ng serve --o
+default server is 4200
+To stop the server : ctrl+c
+
+Folder Structure Analysis
+tsconfig files defines rules typescript comipler follows when converting ts into Js
+tsconfig.spec.json--->testing
+tsconfig.app.json--->application
+tsconfig.json-->whole project
+readme.md-->instruction file
+package.json--> it describes the meta data of project
+package-lock.json--> it describes meta data of package.json
+.gitignore ----> it contains files which can be ignored while git stores in github
+angular.json---> ruleset for angular
+.editorconfig --->defines ruleset for editor
+
+converting Static DOM into Dynamic DOM is called Bootstrapping
+
+Whole application will be divided as components. each component will have .ts(component file),.spec.ts(testing),.html(template file),.css(styling), all component will have a name(selector), all components are mentioned in Module
+
+app>index.html---> main html file which contains app-root
+main.ts--->which bootstraps app Module
+style.css---> main.css file
+
+
