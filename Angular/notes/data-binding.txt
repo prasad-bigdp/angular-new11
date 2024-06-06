@@ -15,4 +15,12 @@ One-way data binding:
    <button [disabled]="value">cvdb</button>
    Template(html) to Component(ts):
    iii. event binding
+   <button (click)="fun()">fdh</button>
+
+2. two -way data binding:
+
+we can use two way data binding to store the values or to pass communication between template and component at a time
+
+go to modules file , import formsModule and write it inside imports and 
+in the html use [(ngModel)]="value"
    

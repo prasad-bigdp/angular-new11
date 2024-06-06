@@ -9,3 +9,4 @@ component.html --> template / view -- > UI
 component.ts --> component/model-controller -- logic
 component.css ---->styling
 component.spec.ts ----->testing
+

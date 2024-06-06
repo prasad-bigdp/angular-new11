@@ -1,0 +1,18 @@
+<div id="main">
+  <!-- 1. take url of input and store it as a variable-->
+  <!-- 2.  create a button click event and call function and store the url-->
+ <input type="text" placeholder="Enter the image url" (change)="changeURL($event)">
+ <button (click)="changeSRC()">click me</button>
+ <div>
+  <img [src]="src" alt="">
+ </div>
+</div>
+
+<div>
+  <p>This is two way data binding</p>
+  <input type="text" placeholder="enter image url" [(ngModel)]="myurl">
+  <button>click me</button>
+  <div>
+    <img [src]="myurl" alt="">
+  </div>
+</div>

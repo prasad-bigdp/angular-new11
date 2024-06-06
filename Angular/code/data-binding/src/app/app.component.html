@@ -1,0 +1,20 @@
+<div>
+  <p>One way Data Binding</p>
+  <input type="email" (change)="oneWayData($event)"><br><br><input type="password" (change)="oneWayData($event)"><br><br>
+  <div>
+    Username:{{ou}}
+    password:{{op}}
+  </div>
+</div>
+<div>
+  <p>Two way Data Binding</p>
+   <form action="" (submit)="myFormSubmit()">
+      <input type="email" [(ngModel)]="tu"><br><br>
+      <input type="password" [(ngModel)]="tp"><br><br>
+      <button>submit</button>
+   </form>
+  <div>
+    Username:{{tu}}
+    password:{{tp}}
+  </div>
+</div>
