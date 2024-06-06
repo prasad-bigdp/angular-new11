@@ -1,0 +1,6 @@
+.movies{
+    border: 2px solid blue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}

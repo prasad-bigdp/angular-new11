@@ -1,0 +1,9 @@
+what is angular? and installation
+basic understanding of architecture and folder structure
+data binding:
+  one way(string interpolation,property binding,event binding)
+  two way(ngModel)
+Components
+  - communication
+  - parent to child( @input ) 
+  - child to parent( @output, @viewChild, template refernce variable)

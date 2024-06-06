@@ -1,0 +1,12 @@
+what is a component?
+ component is the basic building block of angular.
+  we divide ui(user interface into logical parts which can be simple, meaningful and reusable). these reusable parts are called components.
+
+  can i write multiple components in an application and how?
+  yes, you can create a component manually or by a command " ng generate component component-name"
+
+  what component contains?
+  component contains .html(template),.css(styling), .ts(component/model),.spec.ts(testing),
+  every component should inform to modules.
+
+  
