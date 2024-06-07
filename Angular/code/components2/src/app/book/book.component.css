@@ -1,0 +1,14 @@
+#card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+}
+#card:hover{
+    transform: scale(1.05);
+}

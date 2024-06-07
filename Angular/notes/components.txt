@@ -9,4 +9,19 @@ what is a component?
   component contains .html(template),.css(styling), .ts(component/model),.spec.ts(testing),
   every component should inform to modules.
 
-  
+  If one component inside another component then outer one is called parent component, inner one is called child component
+
+  components communication: components will communicate in three ways
+  1. parent to child
+   to send data from parent component to child component, we use @Input() in child component and attributes/properties in parent component
+  2. child to parent
+    @viewChild:
+    @Output():
+    template reference variable:
+  3. non related components
+
+
+
+
+
+
