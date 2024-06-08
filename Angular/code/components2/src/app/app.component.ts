@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'components2';
+  val = ''
+  val2=''
+  send() {
+    this.val2=this.val
+  }
 }

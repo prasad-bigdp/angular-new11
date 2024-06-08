@@ -10,11 +10,16 @@ export class ChildComponent {
   name = "prasad"
   incr() {
     this.c++;
+    console.log(this.c)
   }
   decr() {
     this.c--;
   }
   reset() {
     this.c=0;
+  }
+  doSomething()
+  {
+    console.log("i did something")
   }
 }

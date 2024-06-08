@@ -1,8 +1,10 @@
 <h1>My world</h1>
 <div id="main">
-    <app-books></app-books>
-    <app-books></app-books>
-    <app-books></app-books>
-    <app-books></app-books>
-    <app-books></app-books>
+    <input type="text" placeholder="enter url" [(ngModel)]="val">
+    <button (click)="send()">send</button>
+    <app-books [val2]="val2"></app-books>
+    <app-books [val2]="val2"></app-books>
+    <app-books [val2]="val2"></app-books>
+    <app-books [val2]="val2"></app-books>
+    <app-books [val2]="val2"></app-books>
 </div>

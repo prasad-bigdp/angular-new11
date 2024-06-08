@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-books',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './books.component.css',
 })
 export class BooksComponent {
+  @Input() val2!: string;
   book1 = 'secret';
   book2 = 'monk who sold his ferrari';
   book3 = 'wings of fire';
