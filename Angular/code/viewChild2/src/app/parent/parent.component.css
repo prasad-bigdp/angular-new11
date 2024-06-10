@@ -1,0 +1,11 @@
+#parent{
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    color: black;
+    font-size: 24px;
+}

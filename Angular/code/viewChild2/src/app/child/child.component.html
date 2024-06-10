@@ -1,0 +1,6 @@
+<div id="child">
+    <p>child works!</p>
+    <p>parent works! {{value}}</p>
+    <input type="text" placeholder="please enter value for parent" [(ngModel)]="cvalue">
+    <button (click)="sendToParent()">send to parent</button>
+</div>
