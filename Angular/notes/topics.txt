@@ -7,3 +7,7 @@ Components
   - communication
   - parent to child( @input ) 
   - child to parent( @output, @viewChild, template refernce variable)
+Directives
+  -- property Directives
+  -- structural Directives
+  -- custom Directives

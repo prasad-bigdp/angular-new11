@@ -14,12 +14,21 @@ what is a component?
   components communication: components will communicate in three ways
   1. parent to child
    to send data from parent component to child component, we use @Input() in child component and attributes/properties in parent component
+   @Input(childcomponentname) urchildproperty:childcomponentname;
   2. child to parent
     @viewChild:
-    @Output():
-    template reference variable:
-  3. non related components
+    you can use @ViewChild in Parent attributes
+    @ViewChild(childcomponentname) child:childcomponentname
+    you can access all the values from child component using object child created above
 
+    @Output(): output creates an event in child component like
+    @Output() eventName = new EventEmitter(); and parent triggeres this events and gets whatever the event emits
+
+    template reference variable:To access the values/functions from a child component, you can assign a name in parent reference like
+    <app-child #name></app-child>
+
+  3. non related components:non related components communicate through services
+  
 
 
 

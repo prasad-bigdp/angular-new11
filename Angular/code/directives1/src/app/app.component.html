@@ -1,0 +1,16 @@
+<h1 [ngClass]="{'x':isHide,'y':isRed}" [ngStyle]="{'color':redorblack?'red':'black','fontSize':fs}">App Component</h1>
+<button (click)="change()">change</button>
+<button (click)="change2()">chnage2</button>
+<!-- if statements-->
+<div *ngIf="isVisible else elseBlock">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, eveniet. Laborum corrupti</p>
+  <div *ngIf="isVisible2 else thenBlock">
+    <h2>Haiiiiiiiiiiii</h2>
+  </div>
+</div>
+<ng-template #thenBlock>
+  <p>your paragraph2</p>
+</ng-template>
+<ng-template #elseBlock>
+  <p>my paragraph2</p>
+</ng-template>

@@ -1,0 +1,19 @@
+Directives are the commands to manipulate the behaviour of DOM.
+There are three types of Directives in Angular
+1. property/attribute Directives:
+These directives are used to manipulate properties of a element in the DOM
+[ngClass]="{'classname':flagname,'classname2':flagname2}",
+ you can add as many as classes you like
+[ngStyle] ="{'stylename':'value','stylename':flagname?value:value2}"
+ you can add as many as styles you like
+
+2. structural Directives: 
+we can change the structure of our template by DOM using these directives
+ 1.ngIf: 
+
+
+
+
+
+
+3. custom directives
