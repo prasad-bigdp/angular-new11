@@ -1,0 +1,11 @@
+<app-header [count]="c"></app-header>
+<div class="movies">
+  <div class="movie" *ngFor="let m of horrorMovies">
+    <img src="{{m.posterURL}}" alt="{{m.title}}">
+    <a href="https://www.imdb.com/title/{{m.imdbId}}" target="_blank">
+      <h2>{{m.title}}</h2>
+    </a>
+    <button (click)="addFav()">add to favourites 💓</button>
+  </div>
+</div>
+<app-footer></app-footer>

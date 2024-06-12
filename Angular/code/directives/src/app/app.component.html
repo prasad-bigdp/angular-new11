@@ -1,0 +1,37 @@
+<!-- ngIf example-->
+<div *ngIf="isAdmin then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>I'm admin</ng-template>
+<ng-template #elseBlock>
+  <div *ngIf="isTeacher else elseBlock2">
+    I'm Teacher
+  </div>
+</ng-template>
+<ng-template #elseBlock2>
+  <div *ngIf="isStudent else elseBlock3"> I'm student</div>
+</ng-template>
+<ng-template #elseBlock3>I'm something</ng-template>
+<!-- switch example , imagine we have four logins teacher,student,principle,admin-->
+ <input type="text" [(ngModel)]="userRole" placeholder="enter the role">
+<div [ngSwitch]="userRole">
+  <div *ngSwitchCase="'admin'">I'm admin</div>
+  <div *ngSwitchCase="'student'">I'm student</div>
+  <div *ngSwitchCase="'parent'">I'm parent</div>
+  <div *ngSwitchDefault>Please check your option</div>
+</div>
+
+<!-- for demo -->
+ <div *ngFor="let i of students;let x= index">
+      <p>
+        Student Name:{{i}},{{x}}
+      </p>
+ </div>
+<!-- take some array of data-->
+<div class="movies">
+  <div *ngFor="let movie of movies;let x= first" class="movie">
+    <h2>Movie Name: {{movie.name}}</h2>
+    <p>Year: {{movie.year}}</p>
+  </div>
+</div>
+
+
+

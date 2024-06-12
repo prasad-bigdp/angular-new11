@@ -1,0 +1,17 @@
+.movies{
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ gap: 30px;
+}
+.movie{
+ background-color: aliceblue;
+ border-radius: 20px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ transition: all 2s ease;
+ padding: 20px;
+}
+.movie:hover{
+    transform: scale(1.05);
+}

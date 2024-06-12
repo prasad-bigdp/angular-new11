@@ -10,9 +10,21 @@ These directives are used to manipulate properties of a element in the DOM
 2. structural Directives: 
 we can change the structure of our template by DOM using these directives
  1.ngIf: 
-
-
-
+ ngIf is a directive used to change the structure of document based on a condition or flag. 
+ you can also use <ng-template> to represent a block, by default ng-template will be display none
+ 2.ngSwitch: 
+ <div [ngSwitch]="userRole">
+  <div *ngSwitchCase="'admin'">I'm admin</div>
+  <div *ngSwitchCase="'student'">I'm student</div>
+  <div *ngSwitchCase="'parent'">I'm parent</div>
+  <div *ngSwitchDefault>Please check your option</div>
+</div>
+ 3.ngFor:
+  <div *ngFor="let i of students;let x= index">
+      <p>
+        Student Name:{{i}},{{x}}
+      </p>
+ </div>  
 
 
 
