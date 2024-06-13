@@ -1,0 +1,43 @@
+Services are used for common Data
+How components get data from Services:
+Dependency Injection: it is design pattern which creates a new instance of parent values in the child so that if parent changes the values also child will not get affected.
+
+how to do dependency injection in angular?
+we will inject the service in the parameters of constructor
+
+For the API, you need to use default service httpClient
+First goto module and import httpClientModule and write it in imports
+second goto service and inject httpClient
+
+httpClient return Observable, it means mutiple promises, u will resolve it by subscribe
+
+
+step 1: go to terminal and create a service
+"ng generate service service-name". This command will create .ts and .spec.ts files
+.ts file is called service file 
+.spec.ts is service testing file
+
+step 2: create some dummy data in service ts file and goto any component and
+inside component constructor declare a value of type serviceName
+
+step 3: now you can access any service values. all components can access single value.
+
+writing / declaring value with servie name in constructor paramater is dependency injection.
+
+we can use httpClient service for API
+step1: goto service import httpClient and inject as a value into service constructor parameters
+
+step2: goto module, import httpClientModule and declare it in modules
+
+step3: goto components, inject service in constructor paramter and call any method from service
+
+if that method in service returns httpclient request, you will get observable.
+observable are like promises but observable contains series of promises
+you have to subscribe for that observable
+
+
+
+
+
+
+

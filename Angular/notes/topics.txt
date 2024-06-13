@@ -8,6 +8,16 @@ Components
   - parent to child( @input ) 
   - child to parent( @output, @viewChild, template refernce variable)
 Directives
-  -- property Directives
-  -- structural Directives
-  -- custom Directives
+  -- property Directives(ngClass,ngStyle)
+  -- structural Directives(*ngIf,[ngSwitch],*ngFor)
+  -- custom Directives -- later
+Services
+  --basic
+  --httpClient
+  --CRUD
+Forms
+  --Template Forms
+  -- reactive Forms
+  --async validations
+Routing
+RxJS

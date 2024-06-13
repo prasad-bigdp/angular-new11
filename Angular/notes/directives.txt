@@ -20,7 +20,7 @@ we can change the structure of our template by DOM using these directives
   <div *ngSwitchDefault>Please check your option</div>
 </div>
  3.ngFor:
-  <div *ngFor="let i of students;let x= index">
+  <div *ngFor="let i of students;let x= index;let e=even;let o=odd">
       <p>
         Student Name:{{i}},{{x}}
       </p>

@@ -1,0 +1,13 @@
+<h1>Receipes</h1>
+<p>count:{{count}}</p>
+<div class="receipes">
+  <div *ngFor="let i of receipes.recipes" class="receipe">
+    <img src={{i.image}} alt={{i.name}} height="200" width="200">
+     <h2>{{i.name}}</h2>
+     <p>Ingridents:
+      <span *ngFor="let p of i.ingredients">
+        {{p}},
+      </span>
+     </p>
+  </div> 
+</div>
