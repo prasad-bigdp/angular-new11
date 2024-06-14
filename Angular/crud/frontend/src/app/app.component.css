@@ -1,0 +1,14 @@
+.movies{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.movie{
+    padding: 30px;
+    background-color: aliceblue;
+    border-radius: 30px;
+}
+img{
+    height: 200px;
+    width: 200px;
+}

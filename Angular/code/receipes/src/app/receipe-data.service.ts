@@ -15,4 +15,8 @@ export class ReceipeDataService {
   {
    return this.hc.get('https://dummyjson.com/recipes');
   }
+  postData(data:any)
+  {
+    return this.hc.post('https://dummyjson.com/recipes',data);
+  }
 }

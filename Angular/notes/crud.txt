@@ -1,0 +1,12 @@
+create backend api
+open backend folder in terminal
+"npm init -y"----> initiate package.json
+"npm install -g json-server ---> install json-server package in globally
+create a file db.json and inside create an object and inside object an array with values
+like {
+    "arrayname":[
+
+    ]
+}
+in terminal , type "json-server db.json --watch"
+it create an end point with arrayname and 3000 port
