@@ -9,7 +9,8 @@ import { CrudService } from './crud.service';
 export class AppComponent {
   myMovies: any;
   name = "";
-  url=""
+  url = "";
+  selectedItem:any = null;
   constructor(private cr:CrudService)
   {
       this.cr.getData().subscribe((res)=>this.myMovies=res)
@@ -26,5 +27,19 @@ export class AppComponent {
       poster:this.url
     }
     this.cr.createData(data).subscribe((res)=>window.location.reload())
+  }
+  editMovie(item:any)
+  {
+    this.selectedItem = { ...item }
+    console.log(this.selectedItem)
+  }
+  editData(id:any)
+  {
+    this.cr
+      .putData(id, this.selectedItem)
+      .subscribe((res) =>
+        this.cr.getData().subscribe((res) => (this.myMovies = res))
+      );
+    this.selectedItem=null
   }
 }

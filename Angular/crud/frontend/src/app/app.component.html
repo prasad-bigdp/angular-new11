@@ -1,4 +1,4 @@
-<h1>CRUD</h1>
+<h1 class=" text-center">CRUD</h1>
 <div>
   <input type="text" placeholder="enter movie name" [(ngModel)]="name">
     <input type="text" placeholder="enter movie image url" [(ngModel)]="url">
@@ -9,6 +9,17 @@
   <div class="movie" *ngFor="let m of myMovies">
     <img src={{m.poster}} alt={{m.title}} />
     <h2>{{m.title}}</h2>
+        <button type="button" class="btn btn-primary"  (click)="editMovie(m)">edit</button>
+
     <button (click)="deleteMovie(m.id)">❎</button>
+  </div>
+</div>
+<div *ngIf="selectedItem">
+  <div class="modal-dialog">
+    <div class="modal-content">
+  <input type="text" placeholder="enter movie name" [(ngModel)]="selectedItem.title">
+  <input type="text" placeholder="enter movie image url" [(ngModel)]="selectedItem.poster">
+  <button class="btn btn-primary" (click)="editData(selectedItem.id)">Edit</button>
+  </div>
   </div>
 </div>

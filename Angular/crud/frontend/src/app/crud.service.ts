@@ -10,6 +10,10 @@ export class CrudService {
   {
     return this.hc.get('http://localhost:3000/movies');
   }
+  putData(id:number,data:any)
+  {
+    return this.hc.put(`http://localhost:3000/movies/${id}`,data);
+  }
   deleteData(id:any)
   {
     return this.hc.delete(`http://localhost:3000/movies/${id}`);

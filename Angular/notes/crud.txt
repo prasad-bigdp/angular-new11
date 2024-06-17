@@ -8,5 +8,11 @@ like {
 
     ]
 }
-in terminal , type "json-server db.json --watch"
+in terminal , type "npm install -g json-server"+"json-server db.json --watch"
 it create an end point with arrayname and 3000 port
+
+frontend
+1. create angular application " ng new app-name --standalone=false "
+2. create a service " ng generate service service-name"
+3. import httpClinet in service ts file and import httpClientModule in app module ts
+4. injected httpClinet into service and inject the service into app  component file
