@@ -1,0 +1,12 @@
+<h1>Pipes Demo</h1>
+<p>{{name|lowercase}}</p>
+<p>{{dt|date}}</p>
+<p>{{price|currency:"INR"}}</p>
+<p>{{tax|number:'1.2-3'}}</p>
+<p>{{number|prasad:50:"ADD"}}</p>
+<p>{{obj|json}}</p>
+
+<div *ngFor="let m of result|async">
+  {{m.title}}
+</div>
+<!--number:'beforepointminimum.afterpointminimum-afterpointmaximum'-->

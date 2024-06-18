@@ -1,0 +1,8 @@
+pipes are used to transform the data before display.
+there are two types
+1. default pipes : uppercase,lowercase,date,currency,number,json,async
+2. custom pipes : we can create our own pipes
+ng generate pipe pipe-name
+every pipe have pipetransform function which takes default value and some optional arguments and return something
+
+async pipe will resolve/subscribe the observable
