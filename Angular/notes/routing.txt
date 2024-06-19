@@ -1,0 +1,2 @@
+routing defines navigation of different pages with their respective urls
+angular 18/17 versions by default give routing.module file but angular 16/below

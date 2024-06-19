@@ -4,7 +4,6 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'prasad'
 })
 export class PrasadPipe implements PipeTransform {
-
   transform(value: number, val2:number,operation:string): unknown {
     switch (operation)
     {

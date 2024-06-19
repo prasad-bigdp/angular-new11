@@ -30,4 +30,8 @@ Forms
   -- reactive Forms
   --async validations
 Routing
+  -- basic routes,route module,routerlink,routeroutlet
+  -- child/dynamic routing
+  -- auth guards
+  -- lazy loading
 RxJS
