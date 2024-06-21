@@ -11,7 +11,10 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectComponent } from './project/project.component';
 import { NotfoundComponent } from './notfound/notfound.component';
-
+import {FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component'
+import {ReactiveFormsModule } from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +25,15 @@ import { NotfoundComponent } from './notfound/notfound.component';
     ProjectsComponent,
     ContactComponent,
     ProjectComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

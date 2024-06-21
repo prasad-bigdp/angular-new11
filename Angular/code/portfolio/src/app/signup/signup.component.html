@@ -1,0 +1,17 @@
+<form [formGroup]="myForm" (submit)="register()">
+    <input type="text" formControlName="uname">
+    <span class="errors" *ngIf="myForm.get('uname')?.touched && myForm.get('uname')?.hasError('required') ">username required</span><br><br>
+
+    <input type="text" formControlName="email"><span class="errors" *ngIf="myForm.get('email')?.touched && myForm.get('email')?.hasError('required') ">email
+        required</span>
+        <span class="errors" *ngIf="myForm.get('email')?.touched && myForm.get('email')?.hasError('email') ">Enter proper email</span><br><br>
+    <input type="text" formControlName="pwd">
+    <span class="errors" *ngIf="myForm.get('pwd')?.touched && myForm.get('pwd')?.hasError('required') ">Password
+        required</span>
+        <span class="errors" *ngIf="myForm.get('pwd')?.touched && myForm.get('pwd')?.hasError('minlength') ">email
+            required</span><br><br>
+    <button type="submit">
+        submit
+    </button>
+
+</form>

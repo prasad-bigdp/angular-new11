@@ -1,1 +1,30 @@
-<p>contact works!</p>
+<div class="contact">
+    <h2>Contact Form</h2>
+    <form class="contactForm" #contactForm="ngForm" (submit)="onSubmit(contactForm)">
+        <div class="input">
+            <label for="">enter the name</label>
+            <input type="text" name="uname" ngModel required minlength="6">
+        </div>
+        <div class="errors" *ngIf="contactForm.submitted&&contactForm.form.controls['uname'].hasError('required')">
+            Username is required
+        </div>
+        <div class="errors"
+            *ngIf="contactForm.submitted&&contactForm.form.controls['uname']?.touched && contactForm.form.controls['uname'].hasError('minlength')">
+            Enter minimum characters        </div>
+        <div class="input">
+            <label for="">enter the email</label>
+            <input type="email" name="email"  ngModel required email>
+        </div>
+        <div class="errors" *ngIf="contactForm.submitted&& contactForm.controls['email']?.touched && contactForm.controls['email'].hasError('required')">Email is Required</div>
+        <div class="errors" *ngIf="contactForm.submitted&& contactForm.controls['email']?.touched && contactForm.controls['email'].hasError('email')">Enter proper email</div>
+        <div class="input">
+            <label for="" >enter the password</label>
+            <input type="password" name="password" ngModel required maxlength="10" minlength="8">
+        </div>
+        <div class="errors" *ngIf="contactForm.submitted&&contactForm.form.controls['password']?.touched && contactForm.form.controls['password'].hasError('required')">Password is required</div>
+        <div class="errors" *ngIf="contactForm.submitted&&contactForm.form.controls['password']?.touched &&contactForm.form.controls['password'].hasError('minlength')">Enter minimum 8 characters
+        </div>
+       
+        <button type="submit">submit</button>
+    </form>
+</div>

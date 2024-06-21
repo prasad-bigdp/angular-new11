@@ -7,6 +7,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectComponent } from './project/project.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { dashboardGuard } from './dashboard.guard';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -21,6 +23,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'projects', component: ProjectsComponent },
+  { path: 'login', component: LoginComponent },
+  {path:'signup',component:SignupComponent},
   { path: 'project/:id', component: ProjectComponent },
   { path:'dashboard',component:AboutComponent,canActivate:[dashboardGuard]},
   { path: '**',component:NotfoundComponent}

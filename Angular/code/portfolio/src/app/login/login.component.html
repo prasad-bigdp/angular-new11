@@ -1,0 +1,15 @@
+<div>
+    <form #loginForm="ngForm" (submit)="login(loginForm)">
+        <input type="text" name="uname" placeholder="enter username" ngModel required>
+        <span class="errors" *ngIf="loginForm.submitted&&loginForm.controls['uname']?.touched &&loginForm.controls['uname'].hasError('required') ">username is required</span><br><br>
+        <input type="password" name="pwd" placeholder="enter password" ngModel required minlength="6">
+        <span class="errors"
+            *ngIf="loginForm.submitted&&loginForm.controls['pwd']?.touched &&loginForm.controls['pwd'].hasError('required') ">password
+            is required</span>
+            <span class="errors"
+                *ngIf="loginForm.submitted&&loginForm.controls['pwd']?.touched &&loginForm.controls['pwd'].hasError('minlength') ">minimum 6 characters</span>
+        <br><br>
+        <button type="submit">submit</button>
+        <p>Not registred yet, <a routerLink="/signup">click here</a></p>
+    </form>
+</div>
