@@ -1,0 +1,32 @@
+RxJs stands for Reactive Extension for Javascript used for Reactive Programming(deals with stream of data or methods)
+It deals with concepts of Observables,Subjects,Operators
+It is majorly used with angular to deal with asynchronous stream of data
+
+Observable:represents stream of data or events. it can be created from various like arrays,promises, etc.., it can be observed by observer(consumes the data)
+subscription represents execution of an Observable.we can also use it for cancel or error handling
+
+Operators: Operators are like the functions that enable functional programming concepts
+Operators are basically two types 
+1.creation opertors: using these opertors you can create observable
+of(3,6,7)==> used for creating observable from some values
+from([]/{}) ==> used for creating observable from an array or object or promises
+iterval(timeseconds)=> used for creating observable from timeseconds
+2. pipable Operators: these opertors are used when observable is subscribed by observer and before sending to observer if we want to perform an action on each value of obserbale.
+
+map:transforms each value emitted by the observable
+  of(5,6,7,8,9).pipe(map(v => v*2)).subscribe((x) => console.log(x));
+
+filter: it applies for every value emitted by observable but returns only the ones satisfies the condition
+  of(5,6,7,8,9).pipe(filter(v => v%2==0)).subscribe((x) => console.log(x));
+
+mergeMap: it applies for every value emitted by observable but returns only each one as a observable one by one
+  of("hello", "world").pipe(mergeMap(v => of(`${v}`))).subscribe((x) => console.log(x));
+
+subjects: A special type of Observables that can multicase to multiple observers
+---> subject is also observable
+--->subject is also observer
+There are four types of subjects
+1. simple/behavioual subject
+2. replay subject
+3. async subject
+4.void subject
