@@ -1,2 +1,58 @@
 routing defines navigation of different pages with their respective urls
-angular 18/17 versions by default give routing.module file but angular 16/below
+angular 18/17 versions by default give routing.module file
+ but angular 16/below
+
+ routing module , you wilcreate an array routes of types Routes like below:
+ import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+
+2. define routes inside routes array , each route is an object which contains
+path and component
+{ path:'xyz',component:HomeComponent }
+the above statement means url/xyz will load HomeComponent. we can add as many as routes we want in routes array.
+
+but inside the component wherever <router-outlet> is present, components will be loaded in that place only
+
+3. notfoundcomponent:
+{ path: '**',component:NotfoundComponent}
+** stands for any path which not present above
+
+4. Children Routing:
+we can also define routing inside the component like inside home again about and contact
+/home/about or /home/contact
+
+we have to define childern like below:
+  {
+    path: 'home',
+    component: HomeComponent,
+    children: [
+      { path: 'about', component: AboutComponent },
+      { path: 'contact', component: ContactComponent },
+    ],
+  }
+
+5. dynamic Routing:
+we can also route without specific path names/values
+/home/1,home/2,home/3.... till 100, i wanna do routing
+
+{path:'home/:id',component:nameof the component},
+
+6.guards: we can also protect our routes using auth guards:
+can Activate: protect the route before it gets activated
+canDeactivate: protech the route before it deactivates
+canChildActivate: protect the route before child activates
+canMatch: protect the route before it matches
+
+
+
+
+
+create an anchor link and use routerLink instaed of href to achieve SPA

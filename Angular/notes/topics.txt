@@ -23,7 +23,7 @@ Services
   --httpClient 
   --CRUD: do crud using httpClient and json-server
 Pipes:
-  --default Pipes
+  --default Pipes(uppercase,lowercase,date,currency,async,json,number)
   --custom pipes
 Forms
   --Template Forms
@@ -35,3 +35,7 @@ Routing
   -- auth guards
   -- lazy loading
 RxJS
+
+
+need to discuss:
+custom directives,lazy loading,async validations,RxJS, material UI,firebase

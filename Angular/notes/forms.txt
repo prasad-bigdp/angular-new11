@@ -1,0 +1,48 @@
+Angular By default deals the forms in two ways
+1. Template Driven forms
+2. Reactive Forms(Model Driven Forms)
+
+a normal input will create a formControl class instance and complete form also create a Form instance
+            <input type="text" name="uname" #chitti="ngModel" ngModel>
+This line creates an instance of formControl called ngModel. it will give you basic validations directly like
+errors: it contains all the errors
+valid, invalid: are the flag values which will be true or false based on input validations
+touched and untouched: are the flag values which will be true or false based on whether you touch them or not
+Prestine and Dirty:are the flag values which will be true or false based on you change them or not
+enabled and disabled: are the flag values which will return true or false based on input is enabled or disabled
+
+Template Driven:
+ we will give complete form as ngForm and each input as ngModel
+ <form #something="NgForm">
+    <input type="email" name="em" ngModel>
+    <input type="password" name="pwd" ngModel>
+    <button type="submit">login</button>
+ </form>
+
+ Reactive Form : In Reactive forms , we only create form by creating new Instances of FormGroup and formControl and connect them for html by formGroup property and formcontrolname attribute
+
+//ts
+export class SignUp component
+{
+    formName:FormGroup
+  constructor()
+  {
+    this.formName= this.FormGroup({
+        un:new formControl('',[Validators.required])
+        em:new formControl('',[Validators.required,Validators.email])
+        pwd:new formControl('',[Validators.required,Validators.minlength(6)])
+    })
+  }
+  signup()
+  {
+    if(this.formName.valid){
+        alert("form submitted successfully")
+    }
+  }
+}
+//html
+<form [formGroup]="formName">
+<input type="text" formcontrolname="un">
+and so on......
+</form>
+
