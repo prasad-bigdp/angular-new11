@@ -1,0 +1,7 @@
+angular released in november 2023 - angular 17.
+it changed from module based system to standalone components
+it brings new control flow directives (@if,@for,@switch)
+it brings deferred loading(@defer)
+it brings ESbuild default
+it brings SSR
+it brings so many other experimental features like signals etc..,

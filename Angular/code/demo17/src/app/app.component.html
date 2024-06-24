@@ -1,0 +1,20 @@
+@if(show){
+  <div>App component</div>
+}
+@else if(show2) {
+  <div>second component</div>
+}
+@switch (title) {
+
+}
+@for (item of items; track item) {
+<li>{{ item}}</li>
+} @empty {
+<li>There are no items.</li>
+}
+@defer(on timer(5000ms)){
+  <div>my logicccc wait.....</div>
+}@placeholder {
+  <div>loading.....</div>
+}
+<app-header></app-header>
