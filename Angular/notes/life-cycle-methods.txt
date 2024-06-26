@@ -1,0 +1,15 @@
+At different stages of components life cycle , different methods automatically gets called, these are called life cycle methods
+
+After constructor 
+1. ngOnChanges()--> if ur component is receiving any value, and its value is changed now, it triggers ngOnChanges in child
+2.ngDoCheck()---> ngDoCheck will get trigger automatically to check the values it is receiving
+3. ngOnInit()---> this method will automatically triggers in the initialization of component
+
+There ar etwo DOM's in angular
+Content DOM and View DOM
+4.ngAfterContentInit: it get triggered automatically after ContentDOM initiated
+5.ngAfterContentChecked :it get triggered automatically after ContentDOM Checked
+6.ngAfterViewInit: it get triggered automatically after viewDOM initiated
+7.ngAfterViewChecked : it gets triggered automatically after viewDOM Checked
+
+8.ngDestroy: the moment u leave the components, it gets triggered

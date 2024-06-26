@@ -2,21 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { ProductsComponent } from '../components/products/products.component';
-const materialComponents = [
-  MatCardModule,
-  MatButtonModule
-]
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
-  declarations: [
-    ProductsComponent
-  ],
-  imports: [
-    CommonModule,
-    MatButtonModule,
-    MatCardModule
-  ]
+  declarations: [],
+  imports: [CommonModule, MatButtonModule, MatCardModule, MatGridListModule],
+  exports: [CommonModule, MatButtonModule, MatCardModule, MatGridListModule],
 })
-export class MaterialModule { }
+export class MaterialModule {}

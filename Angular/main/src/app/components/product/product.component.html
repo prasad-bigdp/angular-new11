@@ -1,11 +1,23 @@
-<div class="product">
-    <div class="image">
-    <img src={{product.thumbnail}} alt={{product.title}}>
-    </div>
-    <div class="details">
-        <h2>{{product.title}}</h2>
-        <p>{{product.description}}</p>
-        <p>{{product.price | currency:"INR"}}</p>
-        <button>Add to cart</button>
-    </div>
+<div class="product" *ngIf="product">
+    <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile>
+            <div class="image">
+                <img src={{product.thumbnail}} alt={{product.title}}>
+            </div>
+            <mat-grid-list cols={{product.images.length}} rowHeight="2:1">
+                <div *ngFor="let p of product.images">
+                    <mat-grid-tile> <img src={{p}} alt="image"></mat-grid-tile>
+                </div>
+            </mat-grid-list>
+
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <div class="details">
+                <h2>{{product.title}}</h2>
+                <p>{{product.description}}</p>
+                <p>{{product.price | currency:"INR"}}</p>
+                <button mat-flat-button (click)="addCart(product)">Add to cart</button>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
 </div>

@@ -16,6 +16,8 @@ import { MaterialModule } from './material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductComponent } from './components/product/product.component';
+import { ApiService } from './services/api.service';
+import { CartService } from './services/cart.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { ProductComponent } from './components/product/product.component';
     CartComponent,
     HomeComponent,
     HeaderComponent, 
-    ProductComponent
+    ProductComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,9 @@ import { ProductComponent } from './components/product/product.component';
     HttpClientModule
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    ApiService,
+    CartService
   ],
   bootstrap: [AppComponent]
 })
