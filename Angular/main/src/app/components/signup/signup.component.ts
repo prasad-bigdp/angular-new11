@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { createUserWithEmailAndPassword,signInWithPopup,GoogleAuthProvider } from "firebase/auth";
-import { auth,provider } from '../environments';
+import { auth ,provider} from '../../environments';
+auth
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',

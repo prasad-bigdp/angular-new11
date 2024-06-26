@@ -1,0 +1,20 @@
+<h2>Products List</h2>
+<div  class="products">
+<div *ngFor="let p of products">
+    <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{p.title}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src={{p.thumbnail}} alt={{p.title}}>
+        <mat-card-content>
+            <p>
+                {{p.description}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-flat-button (click)="goProduct(p.id)">Learn more</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+</div>

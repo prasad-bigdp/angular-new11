@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../environments';
+import { auth } from '../../environments';
+auth
 auth
 signInWithEmailAndPassword
 @Component({

@@ -21,3 +21,5 @@ export const auth = getAuth(app);
 import { GoogleAuthProvider } from 'firebase/auth';
 
 export const provider = new GoogleAuthProvider();
+
+export const API_URL = 'https://dummyjson.com/products';
