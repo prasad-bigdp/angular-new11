@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../environments';
+import { Router } from '@angular/router';
 auth
 auth
 signInWithEmailAndPassword
@@ -11,13 +12,14 @@ signInWithEmailAndPassword
 })
 export class LoginComponent {
   em = ""; pwd = "";
+  constructor(private route:Router){}
   signin()
   {
     console.log(this.em, this.pwd);
     signInWithEmailAndPassword(auth, this.em, this.pwd)
       .then((user) => {
         console.log(user);
-        alert("login successful")
+        this.route.navigate(['/dashboard'])
       })
       .catch((err) => {
       alert("error in login")

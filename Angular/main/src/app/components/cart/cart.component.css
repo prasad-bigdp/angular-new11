@@ -1,0 +1,12 @@
+#check
+{
+    display: flex;
+    justify-content: space-between;
+}
+.cartItem{
+    display: flex;
+    justify-content: space-between;
+}
+.cartItem img{
+    height: 100px;
+}

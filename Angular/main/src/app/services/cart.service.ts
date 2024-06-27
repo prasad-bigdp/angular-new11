@@ -19,6 +19,13 @@ export class CartService {
     this.cartCountSubject.next(this.count);
     this.cartItemsSubject.next([...this.cartItems]);
   }
+  removeItem(i:any) {
+    this.cartItems.splice(i, 1);
+    this.count--;
+        this.cartCountSubject.next(this.count);
+    this.cartItemsSubject.next([...this.cartItems]);
+
+  }
   getCount() {
     return this.cartCountSubject.getValue();
   }

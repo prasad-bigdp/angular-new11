@@ -1,3 +1,13 @@
-<div *ngFor="let i of items">
-    <p>{{i.thumbnail}}</p>
+<h1>Cart Items</h1>
+<div class="cartItems">
+    <div *ngFor="let i of items;let ind=index" class="cartItem">
+        <img src={{i.thumbnail}} alt={{i.title}}>
+        <h3>{{i.title}}</h3>
+        <p>{{i.price |currency:"INR"}}</p>
+        <button mat-flat-button (click)="deleteItem(ind)">❎</button>
+    </div>
+</div>
+<div id="check">
+    <p>Total:{{total|currency:"INR"}}</p>
+    <button mat-flat-button><a routerLink="/checkout">checkout</a></button>
 </div>

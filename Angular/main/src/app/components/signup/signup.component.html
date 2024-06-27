@@ -1,9 +1,13 @@
-<div>signup</div>
-<div class="signup">
-   <input type="email" placeholder="enter email" [(ngModel)]="em"><br><br>
-   <input type="password" placeholder="enter password" [(ngModel)]="pwd">
-   <br><br>
-   <button (click)="signup()">signup</button>
+<div class="register">
+   <div class="heading">signup</div>
+   <div class="signup">
+      <input type="email" placeholder="enter email" [(ngModel)]="em"><br><br>
+      <input type="password" placeholder="enter password" [(ngModel)]="pwd">
+      <br><br>
+      <button (click)="signup()" mat-flat-button>signup</button>
+      <p>orr</p>
+      <button (click)="gsignup()" mat-raised-button>signin with google</button>
+      <p>If already registered, login <a routerLink="/login">Here</a></p>
+   </div>
+   
 </div>
-<p>orr</p>
-<button (click)="gsignup()">signin with google</button>

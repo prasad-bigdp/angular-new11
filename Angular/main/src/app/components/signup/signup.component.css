@@ -1,0 +1,24 @@
+
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+.signup{
+    width: 30vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px black;
+}
+input{
+  height: 30px;
+  width: 80%;
+  border: 1px sold black;
+  border-radius: 5px;
+}
+

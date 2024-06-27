@@ -6,7 +6,9 @@ import { HomeComponent } from './components/home/home.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductComponent } from './components/product/product.component';
 import { CartComponent } from './components/cart/cart.component';
-LoginComponent
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { dashboardGuard } from './dashboard.guard';
 
 const routes: Routes = [
   { path: 'signup', component: SignupComponent },
@@ -15,7 +17,9 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'products/:id', component: ProductComponent },
-  { path: 'cart',component:CartComponent}
+  { path: 'cart', component: CartComponent },
+  { path: 'checkout', component: CheckoutComponent },
+  { path:'dashboard',component:DashboardComponent,canActivate:[dashboardGuard]}
 ];
 
 @NgModule({
