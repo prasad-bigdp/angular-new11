@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
   { path: '', component: HomeComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: HomeComponent,loadChildren:()=>import('./material/material.module').then((x)=>x.MaterialModule) },
   { path: 'products', component: ProductsComponent },
   { path: 'products/:id', component: ProductComponent },
   { path: 'cart', component: CartComponent },

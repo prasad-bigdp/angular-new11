@@ -10,7 +10,7 @@ Components
   - communication: do one book library/movie library using nested components
   - parent to child( @input ) book library with different book details
   - child to parent( @output, @viewChild, template refernce variable):
-  send data from parent to child and child to parent 
+  send data from parent to child and child to parent
 Directives
   -- property Directives(ngClass,ngStyle): dark-light mode/ modals / accordins
   -- structural Directives(*ngIf,[ngSwitch],*ngFor) :
@@ -27,8 +27,8 @@ Pipes:
   --default Pipes(uppercase,lowercase,date,currency,async,json,number)
   --custom pipes
 Forms
-  --Template Forms
-  -- reactive Forms
+  --Template Forms ngModel,ngForm, --> touched,pristine,dirty,valid,invalid
+  -- reactive Forms new FormControl, new FormModel
   --async validations
 Routing
   -- basic routes,route module,routerlink,routeroutlet
@@ -36,7 +36,9 @@ Routing
   -- auth guards
   -- lazy loading
 RxJS
-
+  -- Observables
+  -- Subjects
+  -- Operators
 
 need to discuss:
 custom directives,lazy loading,async validations,RxJS, material UI,firebase
